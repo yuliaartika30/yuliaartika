@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yulia Artika | Digital Portfolio</title>
+    <title>Yulia Artika | Piping Engineering Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #1a0b12; /* Background gelap dengan sentuhan pink */
-            --card-bg: #2d1622; /* Warna kartu pink gelap */
-            --text-main: #fce7f3;
-            --text-dim: #d1d5db;
-            --accent: #f472b6; /* Pink cerah */
-            --gradient: linear-gradient(135deg, #f472b6 0%, #a855f7 100%); /* Gradasi Pink ke Ungu */
+            --bg: #0f172a; 
+            --card-bg: #1e293b; 
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #38bdf8; /* Biru cerah yang cakep */
+            --gradient: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%); 
         }
 
         * { box-sizing: border-box; scroll-behavior: smooth; }
@@ -26,7 +26,7 @@
             align-items: center;
             text-align: center;
             padding: 20px;
-            background: radial-gradient(circle at top right, #3b0a22, #1a0b12);
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
         }
 
         .profile-img {
@@ -36,7 +36,7 @@
             border: 3px solid var(--accent);
             padding: 5px;
             margin-bottom: 25px;
-            background: #2d1622;
+            background: #1e293b;
         }
 
         h1 {
@@ -48,7 +48,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        .tagline { font-size: 1.2rem; color: #f9a8d4; max-width: 600px; }
+        .tagline { font-size: 1.2rem; color: var(--accent); max-width: 600px; font-weight: 600; letter-spacing: 1px; }
 
         .container { max-width: 900px; margin: -60px auto 100px auto; padding: 0 20px; }
 
@@ -58,16 +58,27 @@
             border-radius: 24px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.4);
             margin-bottom: 40px;
-            border: 1px solid rgba(244, 114, 182, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.1);
         }
 
         h2 { font-size: 1.8rem; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; }
         h2::before { content: ""; width: 8px; height: 30px; background: var(--gradient); border-radius: 4px; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(244, 114, 182, 0.1); padding: 25px; border-radius: 20px; transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); border-color: var(--accent); background: rgba(244, 114, 182, 0.05); }
-        .card h3 { margin: 0 0 10px 0; color: var(--accent); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(56, 189, 248, 0.1); padding: 25px; border-radius: 20px; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border-color: var(--accent); background: rgba(56, 189, 248, 0.05); }
+        .card h3 { margin: 0 0 10px 0; color: var(--accent); font-size: 1.2rem; }
+
+        .skill-badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin: 5px;
+            border: 1px solid var(--accent);
+        }
 
         .btn {
             display: inline-block;
@@ -78,10 +89,10 @@
             text-decoration: none;
             font-weight: 700;
             margin-top: 25px;
-            box-shadow: 0 10px 20px rgba(244, 114, 182, 0.2);
+            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
         }
 
-        footer { text-align: center; padding: 50px; color: #9d174d; font-size: 0.9rem; }
+        footer { text-align: center; padding: 50px; color: var(--text-dim); font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -89,37 +100,46 @@
     <header>
         <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Yulia&mood=happy" alt="Yulia Artika" class="profile-img">
         <h1>Yulia Artika</h1>
-        <p class="tagline">Creative Mind | Digital Strategist | Pink Enthusiast</p>
-        <a href="#about" class="btn">Kenali Saya</a>
+        <p class="tagline">Piping Engineering Student | Aspiring System Designer</p>
+        <a href="#about" class="btn">Explore Portfolio</a>
     </header>
 
     <div class="container" id="about">
         <section>
             <h2>Tentang Saya</h2>
-            <p>Halo! Saya <b>Yulia Artika</b>. Saya fokus pada pembuatan konten digital dan solusi kreatif. Silakan cek beberapa projek saya di bawah ini.</p>
+            <p>Halo! Saya <b>Yulia Artika</b>, mahasiswa <b>Piping Engineering</b> yang berfokus pada perancangan sistem perpipaan dan analisis aliran fluida. Saya memiliki antusiasme besar dalam mempelajari integrasi material, standar industri, dan efisiensi desain teknis. Melalui portofolio ini, saya membagikan perjalanan akademik dan projek yang sedang saya kembangkan.</p>
+        </section>
+
+        <section>
+            <h2>Software Skills</h2>
+            <div style="text-align: center; padding: 10px 0;">
+                <div class="skill-badge">AUTOCAD</div>
+                <div class="skill-badge">SKETCHUP</div>
+                <div class="skill-badge">MS. OFFICE</div>
+            </div>
         </section>
 
         <section id="portfolio">
-            <h2>Projek Saya</h2>
+            <h2>Fokus Keahlian</h2>
             <div class="grid">
                 <div class="card">
-                    <h3>Desain Grafis</h3>
-                    <p>Kumpulan hasil karya desain visual untuk berbagai keperluan branding.</p>
+                    <h3>Technical Design</h3>
+                    <p>Mempelajari dasar-dasar pemodelan jalur pipa (Piping Layout) sesuai dengan standar ASME dan integrasi sistem fluida.</p>
                 </div>
                 <div class="card">
-                    <h3>Konten Kreator</h3>
-                    <p>Strategi dan eksekusi konten untuk media sosial agar lebih menarik.</p>
+                    <h3>Material Analysis</h3>
+                    <p>Memahami pemilihan material pipa yang tepat berdasarkan tekanan, suhu, dan jenis fluida yang dialirkan.</p>
                 </div>
             </div>
         </section>
 
         <section style="text-align: center;">
-            <h2>Kontak</h2>
-            <p>Punya ide seru? Yuk, kita ngobrol!</p>
-            <a href="mailto:emailkamu@gmail.com" class="btn">Kirim Email</a>
+            <h2>Mari Terhubung</h2>
+            <p>Tertarik untuk berdiskusi seputar dunia engineering atau peluang kolaborasi?</p>
+            <a href="mailto:yuliaartika@example.com" class="btn">Kirim Email</a>
         </section>
     </div>
 
-    <footer>&copy; 2026 Yulia Artika. Pink Version ✨</footer>
+    <footer>&copy; 2026 Yulia Artika. Engineering Excellence ✨</footer>
 </body>
 </html>
